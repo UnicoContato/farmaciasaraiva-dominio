@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Saraiva & Justino</title>
+    <meta name="description" content="A sua farmácia da família em Camaragibe!">
+    <meta property="og:title" content="Farmácia Saraiva & Justino">
+    <meta property="og:description" content="A sua farmácia da família em Camaragibe!">
+    <meta property="og:image" content="https://farmaciasaraiva/img/4.jpeg">
+    <meta property="og:url" content="https://farmaciasaraiva">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#0055A4',
+                        },
+                        secondary: {
+                            DEFAULT: '#FFD700',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-transform duration-300 bg-white/70 backdrop-blur-md border-b border-white/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-primary font-extrabold tracking-tighter">Farmácia Saraiva & Justino</a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-primary font-medium transition-colors">Início</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-primary font-medium transition-colors">Sobre Nós</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-primary font-medium transition-colors">Serviços</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-primary font-medium transition-colors">Galeria</a>
+                    <a href="#contato" class="text-gray-700 hover:text-primary font-medium transition-colors">Contato</a>
+                </nav>
+
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/558188479572" target="_blank" class="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-green-500/30">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-primary hover:text-primary focus:outline-none p-2">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-lg border-b border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Início</a>
+                <a href="#sobre" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Sobre Nós</a>
+                <a href="#servicos" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Serviços</a>
+                <a href="#galeria" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Galeria</a>
+                <a href="#contato" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Contato</a>
+                <a href="https://wa.me/558188479572" target="_blank" class="block mt-4 text-center bg-green-500 text-white px-5 py-3 rounded-md font-semibold">Peça pelo WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="relative h-screen flex items-center justify-center">
+            <div class="absolute inset-0 z-0">
+                <img src="img/2.jpeg" alt="Interior da Farmácia" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto text-white mt-16">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-secondary drop-shadow-lg">Farmácia Saraiva & Justino</h1>
+                <p class="text-xl md:text-3xl mb-10 font-light text-gray-200">Cuidando de você e da sua família todos os dias!</p>
+                <a href="https://wa.me/558188479572" target="_blank" class="inline-flex items-center gap-3 bg-secondary text-primary hover:bg-yellow-400 px-8 py-4 rounded-full text-lg font-bold transition-transform transform hover:scale-105 shadow-[0_0_20px_rgba(255,215,0,0.4)]">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Faça seu Pedido
+                </a>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-24 relative overflow-hidden bg-primary text-white">
+            <div class="absolute top-[-50%] left-[-10%] w-[120%] h-[200%] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400/20 via-transparent to-transparent z-0"></div>
+            
+            <div class="max-w-5xl mx-auto px-4 relative z-10">
+                <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-8 md:p-14 rounded-3xl shadow-2xl text-center">
+                    <h2 class="text-4xl font-bold mb-8 text-secondary">Sobre Nós</h2>
+                    <div class="space-y-6 text-lg leading-relaxed text-gray-100 font-light">
+                        <p>Farmácia Saraiva e Justino é a farmácia da família em Camaragibe! Somos uma farmácia com responsabilidade e compromisso com a saúde do nosso bairro e de toda a cidade. Farmácia Saraiva e Justino nasceu de um sonho simples: cuidar das pessoas do nosso bairro com amor e responsabilidade.</p>
+                        <p>Quando decidimos abrir essa farmácia, queríamos mais do que um ponto de venda, queríamos um lugar de acolhimento. Um espaço onde cada cliente fosse tratado como parte da nossa família, com atenção, carinho e respeito. Sabemos o quanto é difícil quando alguém da família adoece, e por isso estamos aqui todos os dias por você.</p>
+                        <p>Acreditamos que uma farmácia de bairro vai muito além de vender remédios e é cuidar de pessoas. Estamos presentes em ações de saúde na comunidade, porque o bairro que se cuida junto, cresce junto. Temos estacionamento fácil e localização central, no coração de Camaragibe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-primary mb-4">Nossos Serviços</h2>
+                    <p class="text-xl text-gray-500">O melhor para a sua saúde e bem-estar</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-white/60 backdrop-blur-lg border border-white rounded-3xl p-10 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all transform hover:-translate-y-1">
+                        <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Medicamentos</h3>
+                        <p class="text-gray-600">Ampla variedade de medicamentos éticos e genéricos com os melhores preços da região, focando em produtos farmacêuticos sem manipulação.</p>
+                    </div>
+
+                    <div class="bg-white/60 backdrop-blur-lg border border-white rounded-3xl p-10 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all transform hover:-translate-y-1">
+                        <svg class="w-16 h-16 text-primary mx-auto mb-6" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Perfumaria e Higiene</h3>
+                        <p class="text-gray-600">Linha completa de cosméticos, produtos de perfumaria, higiene pessoal e dermocosméticos para o seu cuidado diário.</p>
+                    </div>
+
+                    <div class="bg-white/60 backdrop-blur-lg border border-white rounded-3xl p-10 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all transform hover:-translate-y-1">
+                        <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Atendimento Especializado</h3>
+                        <p class="text-gray-600">Farmacêutico responsável para orientação, entregas grátis em Camaragibe e ações de saúde gratuitas para a comunidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-primary mb-4">Nossa Estrutura</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="img/4.jpeg" alt="Fachada da Farmácia" class="w-full h-72 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="img/1.jpeg" alt="Interior da Farmácia Fraldas" class="w-full h-72 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="overflow-hidden rounded-2xl shadow-lg group">
+                        <img src="img/3.jpeg" alt="Setor de Perfumaria" class="w-full h-72 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="bg-white/80 backdrop-blur-xl border border-white rounded-3xl overflow-hidden shadow-xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-10 lg:p-14">
+                            <h2 class="text-3xl font-bold text-primary mb-8">Contato e Localização</h2>
+                            
+                            <ul class="space-y-6 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="font-bold w-40 flex-shrink-0">Nome Empresarial:</span>
+                                    <span>SARAIVA E JUSTINO COMERCIO DE MEDICAMENTOS LTDA</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="font-bold w-40 flex-shrink-0">CNPJ:</span>
+                                    <span>21.863.430/0001-07</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="font-bold w-40 flex-shrink-0">Endereço:</span>
+                                    <span>R OSCAR SILVA FIGUEREDO, 565A<br>BAIRRO NOVO DO CARMELO<br>CAMARAGIBE - PE</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="font-bold w-40 flex-shrink-0">CEP:</span>
+                                    <span>54.762-310</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="font-bold w-40 flex-shrink-0">Telefone / WhatsApp:</span>
+                                    <a href="https://wa.me/558188479572" target="_blank" class="text-primary font-semibold hover:underline">(81) 8847-9572</a>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="font-bold w-40 flex-shrink-0">Funcionamento:</span>
+                                    <span>Todos os dias, das 7h às 22h</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="h-[500px] lg:h-auto">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.6096504245645!2d-34.985556!3d-8.0305556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDEnNTAuMCJTIDM0wrA1OScwOC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+                                class="w-full h-full border-0" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#003366] text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-4 text-secondary">Farmácia Saraiva & Justino</h3>
+            <p class="text-gray-300 mb-2">SARAIVA E JUSTINO COMERCIO DE MEDICAMENTOS LTDA | CNPJ: 21.863.430/0001-07</p>
+            <div class="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-400">&copy; <span id="year"></span> Farmácia Saraiva & Justino. Todos os direitos reservados.</p>
+                <button id="btn-privacy" class="text-sm text-gray-400 hover:text-white transition-colors">Política de Privacidade</button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" id="modal-overlay"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-white rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative z-10">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-primary">Política de Privacidade</h2>
+                    <button id="btn-close-modal" class="text-gray-500 hover:text-red-500 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <div class="text-gray-600 space-y-4">
+                    <p>A sua privacidade é importante para nós. É política da Farmácia Saraiva & Justino respeitar a sua privacidade em relação a qualquer informação que possamos coletar no site.</p>
+                    <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento.</p>
+                    <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, os protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+                    <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+                    <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
